@@ -1,0 +1,30 @@
+.profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	.profile_card {
+		position: relative;
+		width: 500px;
+		margin: auto;
+		padding: 30px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		position: relative;
+		.heading {
+			margin: 0;
+		}
+		.img {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 30px;
+		}
+		.image {
+			width: 140px;
+			height: 140px;
+			border-radius: 50%;
+		}
+	}
+}

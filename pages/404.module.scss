@@ -1,0 +1,16 @@
+.not_found {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.image {
+		object-fit: contain;
+		margin: 0;
+	}
+	.heading {
+		margin: 0;
+		color: crimson;
+		text-transform: uppercase;
+	}
+}

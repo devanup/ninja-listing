@@ -1,0 +1,29 @@
+.ninja_list {
+	padding: 30px;
+	text-align: center;
+	max-width: 800px;
+	margin: auto;
+}
+.text {
+	font-size: 20px;
+}
+
+.single {
+	text-align: left;
+	padding: 2px 16px;
+	background: #fff;
+	display: block;
+	margin: 20px 10px;
+	border-left: 8px solid #fff;
+	transition: 0.4s;
+}
+.single:hover {
+	border-left: 8px solid crimson;
+	padding-left: 20px;
+	transition: 0.3s;
+}
+
+.city {
+	color: darkgray;
+	margin: 0;
+}
