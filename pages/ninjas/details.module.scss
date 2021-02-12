@@ -27,4 +27,21 @@
 			border-radius: 50%;
 		}
 	}
+	.button {
+		font-family: "Nunito";
+		text-transform: uppercase;
+		padding: 20px;
+		background-color: #000;
+		color: #fff;
+		border: none;
+		outline: none;
+		font-size: 15px;
+		transform: scale(1);
+		transition: 0.3s;
+		&:hover {
+			transition: 0.1s;
+			transform: scale(1.06);
+			cursor: pointer;
+		}
+	}
 }

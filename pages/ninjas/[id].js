@@ -1,5 +1,7 @@
 import styles from '../../pages/ninjas/details.module.scss'
 import Image from 'next/image'
+import {Router, useRouter} from 'next/router'
+
 // Specify dynamic routes to pre-render pages based on data.
 export const getStaticPaths = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -28,6 +30,7 @@ export const getStaticProps = async (context) =>{
 }
 
 const Details = ({ninja}) => {
+    const router = useRouter() // using it to go back to the previous page
     return ( 
         <div className={styles.profile}>
             <div className={styles.profile_card}>    
@@ -39,6 +42,7 @@ const Details = ({ninja}) => {
                 <p>{ninja.website}</p>
                 <p>{ninja.address.city}</p>
             </div>
+            <button className={styles.button} onClick={()=>router.back()}>Go Back</button>
         </div>
      );
 }
